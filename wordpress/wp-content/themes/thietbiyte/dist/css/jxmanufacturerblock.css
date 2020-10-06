@@ -1,0 +1,15 @@
+/*
+* @package      Style JX Manufacturer Block
+* @description  This section holds specific style redeclarations for
+*               JX Manufacturer Block
+*/
+.jx_manufacturers_block {
+  padding: 30px 0;
+  text-align: center;
+}
+.jx_manufacturers_block .h6 {
+  margin: 10px 0;
+}
+.jx_manufacturers_block .hideControlOnEnd.swiper-button-disabled {
+  display: none;
+}

@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a51e16e-a197-4732-8555-a2a297d37022" name="Default Changelist" comment="" />
+    <list default="true" id="0a51e16e-a197-4732-8555-a2a297d37022" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/Medic.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/Medic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/template/homepage.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/template/homepage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/23124d4147f3b8ade1e2-1152x1536.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/23124d4147f3b8ade1e2-1200x1600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/23124d4147f3b8ade1e2-150x150.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/23124d4147f3b8ade1e2-1536x2048.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/23124d4147f3b8ade1e2-225x300.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/23124d4147f3b8ade1e2-768x1024.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/23124d4147f3b8ade1e2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/9152a5a99f1b6045390a-1152x1536.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/9152a5a99f1b6045390a-1200x1600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/9152a5a99f1b6045390a-150x150.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/9152a5a99f1b6045390a-1536x2048.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/9152a5a99f1b6045390a-225x300.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/9152a5a99f1b6045390a-768x1024.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/9152a5a99f1b6045390a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/c12ceb3062f09daec4e1-150x150.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/c12ceb3062f09daec4e1-300x300.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/c12ceb3062f09daec4e1.jpg" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +37,11 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1iMR9Ri35ywZjRz5P60eejnZJlS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -20,8 +49,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../WG/TOYOTA-code" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\thietbiyte2\wordpress\wp-content\themes\thietbiyte\dist\js" />
+      <recent name="C:\xampp\htdocs\thietbiyte2\wordpress\wp-content\themes\thietbiyte\dist\css" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -34,6 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601715322058</updated>
       <workItem from="1601715323529" duration="2529000" />
+      <workItem from="1601873631585" duration="4478000" />
     </task>
     <servers />
   </component>
@@ -41,13 +78,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601715336942">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601884273718">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601715336942" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601884273718" />
     <state x="604" y="336" key="NewPhpFileDialog" timestamp="1601715370237">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1601715370237" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1601873636734">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1601873636734" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1601886383475">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1601886383475" />
   </component>
 </project>
