@@ -16,11 +16,11 @@
     <meta name="description" content="Shop powered by PrestaShop">
     <meta name="keywords" content="">
 
-    <script type="text/javascript" async="" src="./Medic_files/ec.js.tải xuống"></script>
-    <script type="text/javascript" async="" src="./Medic_files/analytics.js.tải xuống"></script>
-    <script async="" src="./Medic_files/gtm.js.tải xuống"></script>
-    <script src="./Medic_files/3ts2ksMwXvKRuG480KNifJ2_JNM.js.tải xuống"></script>
-    <script src="./Medic_files/4o300efCt-CXoq1JEC-sVReFz48.js.tải xuống"></script>
+    <script type="text/javascript" async="" src="<?= get_template_directory_uri() ?>/dist/js/ec.js.tải xuống"></script>
+    <script type="text/javascript" async="" src="<?= get_template_directory_uri() ?>/dist/js/analytics.js.tải xuống"></script>
+    <script async="" src="<?= get_template_directory_uri() ?>/dist/js/gtm.js.tải xuống"></script>
+    <script src="<?= get_template_directory_uri() ?>/dist/js/3ts2ksMwXvKRuG480KNifJ2_JNM.js.tải xuống"></script>
+    <script src="<?= get_template_directory_uri() ?>/dist/js/4o300efCt-CXoq1JEC-sVReFz48.js.tải xuống"></script>
     <link rel="alternate" href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=1"
           hreflang="en-us">
     <link rel="alternate" href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=2"
@@ -914,7 +914,7 @@
             </div>
             <div class="row it_XUSJKESNPIVR align-items-center">
                 <div class="it_BPPCCVBIMGEP col-12 col-sm-12 col-md-12 col-lg-3   logotype">
-                    <a class="jxml-logo" href="<?= home_url(); ?>>" title="Medic">
+                    <a class="jxml-logo" href="<?= home_url(); ?>" title="Medic">
                         <img class="logo img-fluid" src="<?php the_field('logo', 'option') ?>" alt="Medic">
                     </a>
                 </div>
@@ -1223,7 +1223,7 @@
                                                                 <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=11&amp;id_product_attribute=197&amp;rewrite=folding-exercise-peddler-with-electronic-display&amp;controller=product&amp;id_lang=1#/5-color-grey/25-base_material-shrome/30-weight_capacity-250_lbs"
                                                                    title="Folding Exercise Peddler with Electronic Display">
                                                                     <img class="img-fluid"
-                                                                         src="./Medic_files/49-home_default.webp"
+                                                                         src="<?= get_template_directory_uri() ?>/dist/js/49-home_default.webp"
                                                                          alt="Folding Exercise Peddler with Electronic Display">
                                                                 </a>
                                                             </div>

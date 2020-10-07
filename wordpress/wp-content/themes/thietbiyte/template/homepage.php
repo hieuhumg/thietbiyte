@@ -1,6 +1,29 @@
 <?php
 /* Template Name: Trang chủ */
 get_header();
+
+
+//lấy Id
+$id = get_the_ID();
+$banner_home = get_field('banner_home');
+
+//lấy danh sách sản phẩm theo taxonomy
+$cates = get_terms(['taxonomy' => 'product_cat','hide_empty' => false,]);
+
+$args_post = array(
+       'post_type' => 'danh-sach-san-pham',
+//                                'tax_query' => array(
+//                                    array(
+//                                        'taxonomy' => 'danh_muc_san_pham',
+//                                        'field' => 'term_id',
+//                                        'terms' => ''
+//                                    )
+//                                ),
+       'posts_per_page' => -1,
+       'order' => 'ASC'
+);
+$query = new WP_Query($args_post);
+$post_tax = $query->posts;
 ?>
 
        <aside id="top-column">
@@ -11,65 +34,26 @@ get_header();
                                           <div id="ps-image-slider" class="swiper-container swiper-container-horizontal"
                                                data-autoplay="50000" data-loop="false" data-pause="true">
                                                  <ul class="swiper-wrapper" role="listbox">
-                                                        <li class="swiper-slide swiper-slide-active" role="option" aria-hidden="false"
-                                                            style="width: 1140px;">
+                                                        <?php foreach ($banner_home as $value){  ?>
+                                                        <li class="swiper-slide swiper-slide-active" role="option">
                                                                <a href="http://index.php/?id_category=1&amp;controller=category">
                                                                       <figure>
                                                                              <img class="img-fluid w-100"
-                                                                                  src="./Medic_files/a355190ffe34d5f4d68f7f588e0d482abb8227b9_Rectangle.jpg"
+                                                                                  src="<?= $value['sub_banner'];?>"
                                                                                   alt="sample-1">
                                                                              <figcaption>
-                                                                                    <h2 class="ps-image-slider-title">Sample 1</h2>
+                                                                                    <h2 class="ps-image-slider-title"><?= $value['tieu_de']; ?></h2>
                                                                                     <div class="ps-image-slider-desc">
                                                                                            <div class="text-center">
-                                                                                                  <h2>Medical Equipment<br>Store</h2>
-                                                                                                  <p>Find everything for your medical equipment needs. Best
-                                                                                                         quality and price.</p>
+                                                                                                  <h2><?= $value['tieu_de']; ?></h2>
+                                                                                                  <p><?= $value['noi_dung'] ?></p>
                                                                                            </div>
                                                                                     </div>
                                                                              </figcaption>
                                                                       </figure>
                                                                </a>
                                                         </li>
-                                                        <li class="swiper-slide swiper-slide-next" role="option" aria-hidden="true"
-                                                            style="width: 1140px;">
-                                                               <a href="http://index.php/?id_category=4&amp;controller=category">
-                                                                      <figure>
-                                                                             <img class="img-fluid w-100"
-                                                                                  src="./Medic_files/5fca64c3ad581f74c741b7903518070ae2c9dc63_Rectangle (1).jpg"
-                                                                                  alt="sample-2">
-                                                                             <figcaption>
-                                                                                    <h2 class="ps-image-slider-title">Sample 2</h2>
-                                                                                    <div class="ps-image-slider-desc">
-                                                                                           <div class="text-center">
-                                                                                                  <h2>Hospital parts<br>&amp; equipments</h2>
-                                                                                                  <p>Equip your hospital with equipment and parts from your most
-                                                                                                         trusted brands</p>
-                                                                                           </div>
-                                                                                    </div>
-                                                                             </figcaption>
-                                                                      </figure>
-                                                               </a>
-                                                        </li>
-                                                        <li class="swiper-slide" role="option" aria-hidden="true" style="width: 1140px;">
-                                                               <a href="http://index.php/?id_category=3&amp;controller=category">
-                                                                      <figure>
-                                                                             <img class="img-fluid w-100"
-                                                                                  src="./Medic_files/ccd1fcee00c0fb2820f949391ade42f2a0da890f_Rectangle (1).jpg"
-                                                                                  alt="sample-3">
-                                                                             <figcaption>
-                                                                                    <h2 class="ps-image-slider-title">Sample 3</h2>
-                                                                                    <div class="ps-image-slider-desc">
-                                                                                           <div class="text-center">
-                                                                                                  <h2>Emergency <br> medical</h2>
-                                                                                                  <p>Equipment &amp; supplies for emergency &amp; rescue
-                                                                                                         facilities</p>
-                                                                                           </div>
-                                                                                    </div>
-                                                                             </figcaption>
-                                                                      </figure>
-                                                               </a>
-                                                        </li>
+                                                        <?php } ?>
                                                  </ul>
                                                  <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span
                                                                class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span
@@ -142,9 +126,9 @@ get_header();
                      <div class="row it_CVUHKNWLNWBN custom-tabs mt-3">
                             <div class="it_NEFMPOAKLBCJ col-12      custom-tab-links title-none text-uppercase">
                                    <div class="jxml-html custom-link active">
-                                          <h3 class="jxml-html-title">New Arrivals</h3>
+                                          <h3 class="jxml-html-title">SẢN PHẨM MỚI</h3>
                                           <div class="jxml-html-description">
-                                                 <p>New Arrivals</p>
+                                                 <p>SẢN PHẨM MỚI</p>
                                           </div>
                                    </div>
                                    <div class="jxml-html custom-link ">
@@ -165,7 +149,12 @@ get_header();
                                           <section class="new-products grid">
                                                  <h2 class="h2 products-section-title">New products</h2>
                                                  <div class="products">
-
+                                                        <?php
+                                                               if(count($post_tax) > 0) {
+                                                               foreach ($post_tax as $item){
+                                                                      $product_img = get_field('product_img', $item->ID);
+                                                                      $product_price = get_field('product_price', $item->ID);
+                                                               ?>
                                                         <article class="product-miniature js-product-miniature" data-id-product="27"
                                                                  data-id-product-attribute="685" itemscope=""
                                                                  itemtype="http://schema.org/Product">
@@ -176,10 +165,10 @@ get_header();
                                                                                     <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=27&amp;id_product_attribute=685&amp;rewrite=stander-ez-adjust-bed-rail&amp;controller=product&amp;id_lang=1#/7-color-beige/25-base_material-shrome/30-weight_capacity-250_lbs"
                                                                                        class="product-thumbnail-link">
                                                                                            <div class="thumbnails-rollover horizontal_slide">
-                                                                                                  <img class="img-fluid" src="./Medic_files/161-home_default.webp"
+                                                                                                  <img class="img-fluid" src="<?= $product_img[0]['url']; ?>"
                                                                                                        alt="Stander EZ Adjust Bed Rail"
                                                                                                        data-full-size-image-url="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/6/1/161-large_default.jpg">
-                                                                                                  <img class="img-fluid" src="./Medic_files/162-home_default.webp"
+                                                                                                  <img class="img-fluid" src="<?= $product_img[1]['url']; ?>"
                                                                                                        alt="Stander EZ Adjust Bed Rail"
                                                                                                        data-full-size-image-url="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/6/2/162-large_default.jpg">
                                                                                            </div>
@@ -205,9 +194,9 @@ get_header();
 
                                                                       <div class="product-miniature-information">
 
-                                                                             <p class="product-title h2" itemprop="name"><a
-                                                                                           href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=27&amp;id_product_attribute=685&amp;rewrite=stander-ez-adjust-bed-rail&amp;controller=product&amp;id_lang=1#/7-color-beige/25-base_material-shrome/30-weight_capacity-250_lbs">Stander
-                                                                                           EZ Adjust Bed Rail</a></p>
+                                                                             <p class="product-title h2" itemprop="name"><?= $item->post_title ?><a
+                                                                                           href="<?= get_permalink($item->ID); ?>">
+                                                                                    </a></p>
 
 
                                                                              <div class="product-description-short"> Yep! You are in the right place and
@@ -284,830 +273,7 @@ get_header();
                                                                       </div>
                                                                </div>
                                                         </article>
-
-
-                                                        <article class="product-miniature js-product-miniature" data-id-product="26"
-                                                                 data-id-product-attribute="653" itemscope=""
-                                                                 itemtype="http://schema.org/Product">
-                                                               <div class="product-miniature-container">
-                                                                      <div class="product-miniature-thumbnail">
-                                                                             <div class="product-thumbnail">
-
-                                                                                    <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=26&amp;id_product_attribute=653&amp;rewrite=polar-h7-bluetooth-smart-heart-rate-sensor&amp;controller=product&amp;id_lang=1#/11-color-black/25-base_material-shrome/30-weight_capacity-250_lbs"
-                                                                                       class="product-thumbnail-link">
-                                                                                           <div class="thumbnails-rollover horizontal_slide">
-                                                                                                  <img class="img-fluid" src="./Medic_files/155-home_default.webp"
-                                                                                                       alt="Polar H7 Bluetooth Smart Heart Rate Sensor"
-                                                                                                       data-full-size-image-url="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/5/5/155-large_default.jpg">
-                                                                                                  <img class="img-fluid" src="./Medic_files/156-home_default.webp"
-                                                                                                       alt="Polar H7 Bluetooth Smart Heart Rate Sensor"
-                                                                                                       data-full-size-image-url="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/5/6/156-large_default.jpg">
-                                                                                           </div>
-
-                                                                                    </a>
-
-
-                                                                                    <ul class="product-flags">
-                                                                                           <li class="product-flag new">New</li>
-                                                                                    </ul>
-
-
-                                                                                    <a class="quick-view btn btn-sm btn-dark d-none d-xl-block"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       data-link-action="quickview"
-                                                                                       data-img-cover="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/5/5/155-large_default.jpg"
-                                                                                       data-loading-text="Loading product info...">
-                                                                                           Quick view
-                                                                                    </a>
-
-                                                                             </div>
-                                                                      </div>
-
-                                                                      <div class="product-miniature-information">
-
-                                                                             <p class="product-title h2" itemprop="name"><a
-                                                                                           href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=26&amp;id_product_attribute=653&amp;rewrite=polar-h7-bluetooth-smart-heart-rate-sensor&amp;controller=product&amp;id_lang=1#/11-color-black/25-base_material-shrome/30-weight_capacity-250_lbs">Polar
-                                                                                           H7 Bluetooth Smart...</a></p>
-
-
-                                                                             <div class="product-description-short"> Yep! You are in the right place and
-                                                                                    don’t waste your precious time on hesitations. Our goal is...
-                                                                             </div>
-
-
-                                                                             <ul class="variant-links">
-                                                                                    <li class="variant-links-item">
-                                                                                           <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=26&amp;id_product_attribute=653&amp;rewrite=polar-h7-bluetooth-smart-heart-rate-sensor&amp;controller=product&amp;id_lang=1#/11-color-black/25-base_material-shrome/30-weight_capacity-250_lbs"
-                                                                                              class="color" title="Black"
-                                                                                              style="background-color: #434A54"><span
-                                                                                                         class="sr-only">Black</span></a>
-                                                                                    </li>
-                                                                                    <li class="variant-links-item">
-                                                                                           <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=26&amp;id_product_attribute=658&amp;rewrite=polar-h7-bluetooth-smart-heart-rate-sensor&amp;controller=product&amp;id_lang=1#/14-color-blue/25-base_material-shrome/30-weight_capacity-250_lbs"
-                                                                                              class="color" title="Blue"
-                                                                                              style="background-color: #5D9CEC"><span
-                                                                                                         class="sr-only">Blue</span></a>
-                                                                                    </li>
-                                                                                    <span class="js-count count">0</span>
-                                                                             </ul>
-
-
-                                                                             <div class="product-price">
-
-
-                                                                                    <span class="sr-only">Price</span>
-                                                                                    <span itemprop="price" class="price">$75.00</span>
-
-
-                                                                             </div>
-
-
-                                                                             <div class="product-buttons">
-                                                                                    <a class="add-to-cart"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?controller=cart&amp;add=1&amp;id_product=26&amp;id_product_attribute=653&amp;token=3b8f4baf9481f88f849f6dca5d09813f"
-                                                                                       rel="nofollow" data-id-product="26" data-id-product-attribute="653"
-                                                                                       data-link-action="add-to-cart">
-                                                                                           <i class="material-icons-shopping_cart" aria-hidden="true"></i>
-                                                                                           <span>Add to cart</span>
-                                                                                    </a>
-                                                                             </div>
-
-                                                                             <div class="functional-buttons">
-                                                                                    <a class="js-compare-button compare-button"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       data-id-product="26" data-action="add-product"
-                                                                                       title="Add to Compare">
-                                                                                           <i class="fa fa-balance-scale" aria-hidden="true"></i>
-                                                                                           <span>Add to compare</span>
-                                                                                    </a>
-
-
-                                                                                    <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       class="wishlist_button_nopop"
-                                                                                       onclick="AddProductToWishlist(event, &#39;action_add&#39;, &#39;26&#39;, &#39;Polar H7 Bluetooth Smart Heart Rate Sensor&#39;, &#39;653&#39;, 1); return false;"
-                                                                                       rel="nofollow" title="Add to my wishlist">
-                                                                                           <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                                                           <span>Add to wishlist</span>
-                                                                                    </a>
-
-
-                                                                                    <a class="quick-view d-xl-none"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       data-link-action="quickview"
-                                                                                       data-img-cover="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/5/5/155-large_default.jpg"
-                                                                                       data-loading-text="Loading product info...">
-                                                                                           <i class="fa fa-eye" aria-hidden="true"></i>
-                                                                                           <span>Quick view</span>
-                                                                                    </a>
-
-                                                                             </div>
-                                                                      </div>
-                                                               </div>
-                                                        </article>
-
-
-                                                        <article class="product-miniature js-product-miniature" data-id-product="25"
-                                                                 data-id-product-attribute="621" itemscope=""
-                                                                 itemtype="http://schema.org/Product">
-                                                               <div class="product-miniature-container">
-                                                                      <div class="product-miniature-thumbnail">
-                                                                             <div class="product-thumbnail">
-
-                                                                                    <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=25&amp;id_product_attribute=621&amp;rewrite=polar-ft4-heart-rate-monitor&amp;controller=product&amp;id_lang=1#/15-color-green/25-base_material-shrome/30-weight_capacity-250_lbs"
-                                                                                       class="product-thumbnail-link">
-                                                                                           <div class="thumbnails-rollover horizontal_slide">
-                                                                                                  <img class="img-fluid" src="./Medic_files/143-home_default.webp"
-                                                                                                       alt="Polar FT4 Heart Rate Monitor"
-                                                                                                       data-full-size-image-url="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/4/3/143-large_default.jpg">
-                                                                                                  <img class="img-fluid" src="./Medic_files/144-home_default.webp"
-                                                                                                       alt="Polar FT4 Heart Rate Monitor"
-                                                                                                       data-full-size-image-url="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/4/4/144-large_default.jpg">
-                                                                                           </div>
-
-                                                                                    </a>
-
-
-                                                                                    <ul class="product-flags">
-                                                                                           <li class="product-flag new">New</li>
-                                                                                    </ul>
-
-
-                                                                                    <a class="quick-view btn btn-sm btn-dark d-none d-xl-block"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       data-link-action="quickview"
-                                                                                       data-img-cover="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/4/3/143-large_default.jpg"
-                                                                                       data-loading-text="Loading product info...">
-                                                                                           Quick view
-                                                                                    </a>
-
-                                                                             </div>
-                                                                      </div>
-
-                                                                      <div class="product-miniature-information">
-
-                                                                             <p class="product-title h2" itemprop="name"><a
-                                                                                           href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=25&amp;id_product_attribute=621&amp;rewrite=polar-ft4-heart-rate-monitor&amp;controller=product&amp;id_lang=1#/15-color-green/25-base_material-shrome/30-weight_capacity-250_lbs">Polar
-                                                                                           FT4 Heart Rate Monitor</a></p>
-
-
-                                                                             <div class="product-description-short"> Yep! You are in the right place and
-                                                                                    don’t waste your precious time on hesitations. Our goal is...
-                                                                             </div>
-
-
-                                                                             <ul class="variant-links">
-                                                                                    <li class="variant-links-item">
-                                                                                           <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=25&amp;id_product_attribute=621&amp;rewrite=polar-ft4-heart-rate-monitor&amp;controller=product&amp;id_lang=1#/15-color-green/25-base_material-shrome/30-weight_capacity-250_lbs"
-                                                                                              class="color" title="Green"
-                                                                                              style="background-color: #A0D468"><span
-                                                                                                         class="sr-only">Green</span></a>
-                                                                                    </li>
-                                                                                    <li class="variant-links-item">
-                                                                                           <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=25&amp;id_product_attribute=626&amp;rewrite=polar-ft4-heart-rate-monitor&amp;controller=product&amp;id_lang=1#/24-color-pink/25-base_material-shrome/30-weight_capacity-250_lbs"
-                                                                                              class="color" title="Pink"
-                                                                                              style="background-color: #FCCACD"><span
-                                                                                                         class="sr-only">Pink</span></a>
-                                                                                    </li>
-                                                                                    <span class="js-count count">0</span>
-                                                                             </ul>
-
-
-                                                                             <div class="product-price">
-
-
-                                                                                    <span class="sr-only">Price</span>
-                                                                                    <span itemprop="price" class="price">$60.00</span>
-
-
-                                                                             </div>
-
-
-                                                                             <div class="product-buttons">
-                                                                                    <a class="add-to-cart"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?controller=cart&amp;add=1&amp;id_product=25&amp;id_product_attribute=621&amp;token=3b8f4baf9481f88f849f6dca5d09813f"
-                                                                                       rel="nofollow" data-id-product="25" data-id-product-attribute="621"
-                                                                                       data-link-action="add-to-cart">
-                                                                                           <i class="material-icons-shopping_cart" aria-hidden="true"></i>
-                                                                                           <span>Add to cart</span>
-                                                                                    </a>
-                                                                             </div>
-
-                                                                             <div class="functional-buttons">
-                                                                                    <a class="js-compare-button compare-button"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       data-id-product="25" data-action="add-product"
-                                                                                       title="Add to Compare">
-                                                                                           <i class="fa fa-balance-scale" aria-hidden="true"></i>
-                                                                                           <span>Add to compare</span>
-                                                                                    </a>
-
-
-                                                                                    <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       class="wishlist_button_nopop"
-                                                                                       onclick="AddProductToWishlist(event, &#39;action_add&#39;, &#39;25&#39;, &#39;Polar FT4 Heart Rate Monitor&#39;, &#39;621&#39;, 1); return false;"
-                                                                                       rel="nofollow" title="Add to my wishlist">
-                                                                                           <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                                                           <span>Add to wishlist</span>
-                                                                                    </a>
-
-
-                                                                                    <a class="quick-view d-xl-none"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       data-link-action="quickview"
-                                                                                       data-img-cover="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/4/3/143-large_default.jpg"
-                                                                                       data-loading-text="Loading product info...">
-                                                                                           <i class="fa fa-eye" aria-hidden="true"></i>
-                                                                                           <span>Quick view</span>
-                                                                                    </a>
-
-                                                                             </div>
-                                                                      </div>
-                                                               </div>
-                                                        </article>
-
-
-                                                        <article class="product-miniature js-product-miniature" data-id-product="24"
-                                                                 data-id-product-attribute="604" itemscope=""
-                                                                 itemtype="http://schema.org/Product">
-                                                               <div class="product-miniature-container">
-                                                                      <div class="product-miniature-thumbnail">
-                                                                             <div class="product-thumbnail">
-
-                                                                                    <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=24&amp;id_product_attribute=604&amp;rewrite=9026-quick-release-shower-chair-with-back&amp;controller=product&amp;id_lang=1#/25-base_material-shrome/30-weight_capacity-250_lbs"
-                                                                                       class="product-thumbnail-link">
-                                                                                           <div class="thumbnails-rollover horizontal_slide">
-                                                                                                  <img class="img-fluid" src="./Medic_files/137-home_default.jpg"
-                                                                                                       alt="9026 Quick Release Shower Chair with Back"
-                                                                                                       data-full-size-image-url="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/3/7/137-large_default.jpg">
-                                                                                                  <img class="img-fluid" src="./Medic_files/138-home_default.jpg"
-                                                                                                       alt="9026 Quick Release Shower Chair with Back"
-                                                                                                       data-full-size-image-url="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/3/8/138-large_default.jpg">
-                                                                                           </div>
-
-                                                                                    </a>
-
-
-                                                                                    <ul class="product-flags">
-                                                                                           <li class="product-flag new">New</li>
-                                                                                    </ul>
-
-
-                                                                                    <a class="quick-view btn btn-sm btn-dark d-none d-xl-block"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       data-link-action="quickview"
-                                                                                       data-img-cover="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/3/7/137-large_default.jpg"
-                                                                                       data-loading-text="Loading product info...">
-                                                                                           Quick view
-                                                                                    </a>
-
-                                                                             </div>
-                                                                      </div>
-
-                                                                      <div class="product-miniature-information">
-
-                                                                             <p class="product-title h2" itemprop="name"><a
-                                                                                           href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=24&amp;id_product_attribute=604&amp;rewrite=9026-quick-release-shower-chair-with-back&amp;controller=product&amp;id_lang=1#/25-base_material-shrome/30-weight_capacity-250_lbs">9026
-                                                                                           Quick Release Shower...</a></p>
-
-
-                                                                             <div class="product-description-short"> Yep! You are in the right place and
-                                                                                    don’t waste your precious time on hesitations. Our goal is...
-                                                                             </div>
-
-
-                                                                             <div class="product-price">
-
-
-                                                                                    <span class="sr-only">Price</span>
-                                                                                    <span itemprop="price" class="price">$60.00</span>
-
-
-                                                                             </div>
-
-
-                                                                             <div class="product-buttons">
-                                                                                    <a class="add-to-cart"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?controller=cart&amp;add=1&amp;id_product=24&amp;id_product_attribute=604&amp;token=3b8f4baf9481f88f849f6dca5d09813f"
-                                                                                       rel="nofollow" data-id-product="24" data-id-product-attribute="604"
-                                                                                       data-link-action="add-to-cart">
-                                                                                           <i class="material-icons-shopping_cart" aria-hidden="true"></i>
-                                                                                           <span>Add to cart</span>
-                                                                                    </a>
-                                                                             </div>
-
-                                                                             <div class="functional-buttons">
-                                                                                    <a class="js-compare-button compare-button"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       data-id-product="24" data-action="add-product"
-                                                                                       title="Add to Compare">
-                                                                                           <i class="fa fa-balance-scale" aria-hidden="true"></i>
-                                                                                           <span>Add to compare</span>
-                                                                                    </a>
-
-
-                                                                                    <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       class="wishlist_button_nopop"
-                                                                                       onclick="AddProductToWishlist(event, &#39;action_add&#39;, &#39;24&#39;, &#39;9026 Quick Release Shower Chair with Back&#39;, &#39;604&#39;, 1); return false;"
-                                                                                       rel="nofollow" title="Add to my wishlist">
-                                                                                           <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                                                           <span>Add to wishlist</span>
-                                                                                    </a>
-
-
-                                                                                    <a class="quick-view d-xl-none"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       data-link-action="quickview"
-                                                                                       data-img-cover="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/3/7/137-large_default.jpg"
-                                                                                       data-loading-text="Loading product info...">
-                                                                                           <i class="fa fa-eye" aria-hidden="true"></i>
-                                                                                           <span>Quick view</span>
-                                                                                    </a>
-
-                                                                             </div>
-                                                                      </div>
-                                                               </div>
-                                                        </article>
-
-
-                                                        <article class="product-miniature js-product-miniature" data-id-product="23"
-                                                                 data-id-product-attribute="580" itemscope=""
-                                                                 itemtype="http://schema.org/Product">
-                                                               <div class="product-miniature-container">
-                                                                      <div class="product-miniature-thumbnail">
-                                                                             <div class="product-thumbnail">
-
-                                                                                    <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=23&amp;id_product_attribute=580&amp;rewrite=medline-toilet-safety-rails&amp;controller=product&amp;id_lang=1#/5-color-grey/25-base_material-shrome/30-weight_capacity-250_lbs"
-                                                                                       class="product-thumbnail-link">
-                                                                                           <div class="thumbnails-rollover horizontal_slide">
-                                                                                                  <img class="img-fluid" src="./Medic_files/131-home_default.jpg"
-                                                                                                       alt="Medline Toilet Safety Rails"
-                                                                                                       data-full-size-image-url="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/3/1/131-large_default.jpg">
-                                                                                                  <img class="img-fluid" src="./Medic_files/132-home_default.jpg"
-                                                                                                       alt="Medline Toilet Safety Rails"
-                                                                                                       data-full-size-image-url="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/3/2/132-large_default.jpg">
-                                                                                           </div>
-
-                                                                                    </a>
-
-
-                                                                                    <ul class="product-flags">
-                                                                                           <li class="product-flag new">New</li>
-                                                                                    </ul>
-
-
-                                                                                    <a class="quick-view btn btn-sm btn-dark d-none d-xl-block"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       data-link-action="quickview"
-                                                                                       data-img-cover="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/3/1/131-large_default.jpg"
-                                                                                       data-loading-text="Loading product info...">
-                                                                                           Quick view
-                                                                                    </a>
-
-                                                                             </div>
-                                                                      </div>
-
-                                                                      <div class="product-miniature-information">
-
-                                                                             <p class="product-title h2" itemprop="name"><a
-                                                                                           href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=23&amp;id_product_attribute=580&amp;rewrite=medline-toilet-safety-rails&amp;controller=product&amp;id_lang=1#/5-color-grey/25-base_material-shrome/30-weight_capacity-250_lbs">Medline
-                                                                                           Toilet Safety Rails</a></p>
-
-
-                                                                             <div class="product-description-short"> Yep! You are in the right place and
-                                                                                    don’t waste your precious time on hesitations. Our goal is...
-                                                                             </div>
-
-
-                                                                             <ul class="variant-links">
-                                                                                    <li class="variant-links-item">
-                                                                                           <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=23&amp;id_product_attribute=580&amp;rewrite=medline-toilet-safety-rails&amp;controller=product&amp;id_lang=1#/5-color-grey/25-base_material-shrome/30-weight_capacity-250_lbs"
-                                                                                              class="color" title="Grey"
-                                                                                              style="background-color: #AAB2BD"><span
-                                                                                                         class="sr-only">Grey</span></a>
-                                                                                    </li>
-                                                                                    <li class="variant-links-item">
-                                                                                           <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=23&amp;id_product_attribute=584&amp;rewrite=medline-toilet-safety-rails&amp;controller=product&amp;id_lang=1#/8-color-white/25-base_material-shrome/30-weight_capacity-250_lbs"
-                                                                                              class="color" title="White"
-                                                                                              style="background-color: #ffffff"><span
-                                                                                                         class="sr-only">White</span></a>
-                                                                                    </li>
-                                                                                    <span class="js-count count">0</span>
-                                                                             </ul>
-
-
-                                                                             <div class="product-price">
-
-
-                                                                                    <span class="sr-only">Price</span>
-                                                                                    <span itemprop="price" class="price">$30.00</span>
-
-
-                                                                             </div>
-
-
-                                                                             <div class="product-buttons">
-                                                                                    <a class="add-to-cart"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?controller=cart&amp;add=1&amp;id_product=23&amp;id_product_attribute=580&amp;token=3b8f4baf9481f88f849f6dca5d09813f"
-                                                                                       rel="nofollow" data-id-product="23" data-id-product-attribute="580"
-                                                                                       data-link-action="add-to-cart">
-                                                                                           <i class="material-icons-shopping_cart" aria-hidden="true"></i>
-                                                                                           <span>Add to cart</span>
-                                                                                    </a>
-                                                                             </div>
-
-                                                                             <div class="functional-buttons">
-                                                                                    <a class="js-compare-button compare-button"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       data-id-product="23" data-action="add-product"
-                                                                                       title="Add to Compare">
-                                                                                           <i class="fa fa-balance-scale" aria-hidden="true"></i>
-                                                                                           <span>Add to compare</span>
-                                                                                    </a>
-
-
-                                                                                    <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       class="wishlist_button_nopop"
-                                                                                       onclick="AddProductToWishlist(event, &#39;action_add&#39;, &#39;23&#39;, &#39;Medline Toilet Safety Rails&#39;, &#39;580&#39;, 1); return false;"
-                                                                                       rel="nofollow" title="Add to my wishlist">
-                                                                                           <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                                                           <span>Add to wishlist</span>
-                                                                                    </a>
-
-
-                                                                                    <a class="quick-view d-xl-none"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       data-link-action="quickview"
-                                                                                       data-img-cover="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/3/1/131-large_default.jpg"
-                                                                                       data-loading-text="Loading product info...">
-                                                                                           <i class="fa fa-eye" aria-hidden="true"></i>
-                                                                                           <span>Quick view</span>
-                                                                                    </a>
-
-                                                                             </div>
-                                                                      </div>
-                                                               </div>
-                                                        </article>
-
-
-                                                        <article class="product-miniature js-product-miniature" data-id-product="22"
-                                                                 data-id-product-attribute="548" itemscope=""
-                                                                 itemtype="http://schema.org/Product">
-                                                               <div class="product-miniature-container">
-                                                                      <div class="product-miniature-thumbnail">
-                                                                             <div class="product-thumbnail">
-
-                                                                                    <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=22&amp;id_product_attribute=548&amp;rewrite=md-one-stainless-steel-premium-dual-head-stethoscope&amp;controller=product&amp;id_lang=1#/15-color-green/25-base_material-shrome/30-weight_capacity-250_lbs"
-                                                                                       class="product-thumbnail-link">
-                                                                                           <div class="thumbnails-rollover horizontal_slide">
-                                                                                                  <img class="img-fluid" src="./Medic_files/117-home_default.webp"
-                                                                                                       alt="MD One Stainless Steel Premium Dual Head Stethoscope"
-                                                                                                       data-full-size-image-url="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/1/7/117-large_default.jpg">
-                                                                                                  <img class="img-fluid" src="./Medic_files/118-home_default.jpg"
-                                                                                                       alt="MD One Stainless Steel Premium Dual Head Stethoscope"
-                                                                                                       data-full-size-image-url="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/1/8/118-large_default.jpg">
-                                                                                           </div>
-
-                                                                                    </a>
-
-
-                                                                                    <ul class="product-flags">
-                                                                                           <li class="product-flag new">New</li>
-                                                                                    </ul>
-
-
-                                                                                    <a class="quick-view btn btn-sm btn-dark d-none d-xl-block"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       data-link-action="quickview"
-                                                                                       data-img-cover="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/1/7/117-large_default.jpg"
-                                                                                       data-loading-text="Loading product info...">
-                                                                                           Quick view
-                                                                                    </a>
-
-                                                                             </div>
-                                                                      </div>
-
-                                                                      <div class="product-miniature-information">
-
-                                                                             <p class="product-title h2" itemprop="name"><a
-                                                                                           href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=22&amp;id_product_attribute=548&amp;rewrite=md-one-stainless-steel-premium-dual-head-stethoscope&amp;controller=product&amp;id_lang=1#/15-color-green/25-base_material-shrome/30-weight_capacity-250_lbs">MD
-                                                                                           One Stainless Steel...</a></p>
-
-
-                                                                             <div class="product-description-short"> Yep! You are in the right place and
-                                                                                    don’t waste your precious time on hesitations. Our goal is...
-                                                                             </div>
-
-
-                                                                             <ul class="variant-links">
-                                                                                    <li class="variant-links-item">
-                                                                                           <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=22&amp;id_product_attribute=548&amp;rewrite=md-one-stainless-steel-premium-dual-head-stethoscope&amp;controller=product&amp;id_lang=1#/15-color-green/25-base_material-shrome/30-weight_capacity-250_lbs"
-                                                                                              class="color" title="Green"
-                                                                                              style="background-color: #A0D468"><span
-                                                                                                         class="sr-only">Green</span></a>
-                                                                                    </li>
-                                                                                    <li class="variant-links-item">
-                                                                                           <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=22&amp;id_product_attribute=553&amp;rewrite=md-one-stainless-steel-premium-dual-head-stethoscope&amp;controller=product&amp;id_lang=1#/16-color-yellow/25-base_material-shrome/30-weight_capacity-250_lbs"
-                                                                                              class="color" title="Yellow"
-                                                                                              style="background-color: #F1C40F"><span
-                                                                                                         class="sr-only">Yellow</span></a>
-                                                                                    </li>
-                                                                                    <span class="js-count count">0</span>
-                                                                             </ul>
-
-
-                                                                             <div class="product-price">
-
-
-                                                                                    <span class="sr-only">Price</span>
-                                                                                    <span itemprop="price" class="price">$50.00</span>
-
-
-                                                                             </div>
-
-
-                                                                             <div class="product-buttons">
-                                                                                    <a class="add-to-cart"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?controller=cart&amp;add=1&amp;id_product=22&amp;id_product_attribute=548&amp;token=3b8f4baf9481f88f849f6dca5d09813f"
-                                                                                       rel="nofollow" data-id-product="22" data-id-product-attribute="548"
-                                                                                       data-link-action="add-to-cart">
-                                                                                           <i class="material-icons-shopping_cart" aria-hidden="true"></i>
-                                                                                           <span>Add to cart</span>
-                                                                                    </a>
-                                                                             </div>
-
-                                                                             <div class="functional-buttons">
-                                                                                    <a class="js-compare-button compare-button"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       data-id-product="22" data-action="add-product"
-                                                                                       title="Add to Compare">
-                                                                                           <i class="fa fa-balance-scale" aria-hidden="true"></i>
-                                                                                           <span>Add to compare</span>
-                                                                                    </a>
-
-
-                                                                                    <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       class="wishlist_button_nopop"
-                                                                                       onclick="AddProductToWishlist(event, &#39;action_add&#39;, &#39;22&#39;, &#39;MD One Stainless Steel Premium Dual Head Stethoscope&#39;, &#39;548&#39;, 1); return false;"
-                                                                                       rel="nofollow" title="Add to my wishlist">
-                                                                                           <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                                                           <span>Add to wishlist</span>
-                                                                                    </a>
-
-
-                                                                                    <a class="quick-view d-xl-none"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       data-link-action="quickview"
-                                                                                       data-img-cover="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/1/7/117-large_default.jpg"
-                                                                                       data-loading-text="Loading product info...">
-                                                                                           <i class="fa fa-eye" aria-hidden="true"></i>
-                                                                                           <span>Quick view</span>
-                                                                                    </a>
-
-                                                                             </div>
-                                                                      </div>
-                                                               </div>
-                                                        </article>
-
-
-                                                        <article class="product-miniature js-product-miniature" data-id-product="21"
-                                                                 data-id-product-attribute="516" itemscope=""
-                                                                 itemtype="http://schema.org/Product">
-                                                               <div class="product-miniature-container">
-                                                                      <div class="product-miniature-thumbnail">
-                                                                             <div class="product-thumbnail">
-
-                                                                                    <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=21&amp;id_product_attribute=516&amp;rewrite=mobility-quadpod-offset-cane-with-ultra-stable-cane-tip&amp;controller=product&amp;id_lang=1#/14-color-blue/25-base_material-shrome/30-weight_capacity-250_lbs"
-                                                                                       class="product-thumbnail-link">
-                                                                                           <div class="thumbnails-rollover horizontal_slide">
-                                                                                                  <img class="img-fluid" src="./Medic_files/111-home_default.webp"
-                                                                                                       alt="Mobility Quadpod Offset Cane with Ultra Stable Cane Tip"
-                                                                                                       data-full-size-image-url="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/1/1/111-large_default.jpg">
-                                                                                                  <img class="img-fluid" src="./Medic_files/112-home_default.webp"
-                                                                                                       alt="Mobility Quadpod Offset Cane with Ultra Stable Cane Tip"
-                                                                                                       data-full-size-image-url="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/1/2/112-large_default.jpg">
-                                                                                           </div>
-
-                                                                                    </a>
-
-
-                                                                                    <ul class="product-flags">
-                                                                                           <li class="product-flag new">New</li>
-                                                                                    </ul>
-
-
-                                                                                    <a class="quick-view btn btn-sm btn-dark d-none d-xl-block"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       data-link-action="quickview"
-                                                                                       data-img-cover="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/1/1/111-large_default.jpg"
-                                                                                       data-loading-text="Loading product info...">
-                                                                                           Quick view
-                                                                                    </a>
-
-                                                                             </div>
-                                                                      </div>
-
-                                                                      <div class="product-miniature-information">
-
-                                                                             <p class="product-title h2" itemprop="name"><a
-                                                                                           href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=21&amp;id_product_attribute=516&amp;rewrite=mobility-quadpod-offset-cane-with-ultra-stable-cane-tip&amp;controller=product&amp;id_lang=1#/14-color-blue/25-base_material-shrome/30-weight_capacity-250_lbs">Mobility
-                                                                                           Quadpod Offset...</a></p>
-
-
-                                                                             <div class="product-description-short"> Yep! You are in the right place and
-                                                                                    don’t waste your precious time on hesitations. Our goal is...
-                                                                             </div>
-
-
-                                                                             <ul class="variant-links">
-                                                                                    <li class="variant-links-item">
-                                                                                           <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=21&amp;id_product_attribute=516&amp;rewrite=mobility-quadpod-offset-cane-with-ultra-stable-cane-tip&amp;controller=product&amp;id_lang=1#/14-color-blue/25-base_material-shrome/30-weight_capacity-250_lbs"
-                                                                                              class="color" title="Blue"
-                                                                                              style="background-color: #5D9CEC"><span
-                                                                                                         class="sr-only">Blue</span></a>
-                                                                                    </li>
-                                                                                    <li class="variant-links-item">
-                                                                                           <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=21&amp;id_product_attribute=521&amp;rewrite=mobility-quadpod-offset-cane-with-ultra-stable-cane-tip&amp;controller=product&amp;id_lang=1#/15-color-green/25-base_material-shrome/30-weight_capacity-250_lbs"
-                                                                                              class="color" title="Green"
-                                                                                              style="background-color: #A0D468"><span
-                                                                                                         class="sr-only">Green</span></a>
-                                                                                    </li>
-                                                                                    <span class="js-count count">0</span>
-                                                                             </ul>
-
-
-                                                                             <div class="product-price">
-
-
-                                                                                    <span class="sr-only">Price</span>
-                                                                                    <span itemprop="price" class="price">$20.00</span>
-
-
-                                                                             </div>
-
-
-                                                                             <div class="product-buttons">
-                                                                                    <a class="add-to-cart"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?controller=cart&amp;add=1&amp;id_product=21&amp;id_product_attribute=516&amp;token=3b8f4baf9481f88f849f6dca5d09813f"
-                                                                                       rel="nofollow" data-id-product="21" data-id-product-attribute="516"
-                                                                                       data-link-action="add-to-cart">
-                                                                                           <i class="material-icons-shopping_cart" aria-hidden="true"></i>
-                                                                                           <span>Add to cart</span>
-                                                                                    </a>
-                                                                             </div>
-
-                                                                             <div class="functional-buttons">
-                                                                                    <a class="js-compare-button compare-button"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       data-id-product="21" data-action="add-product"
-                                                                                       title="Add to Compare">
-                                                                                           <i class="fa fa-balance-scale" aria-hidden="true"></i>
-                                                                                           <span>Add to compare</span>
-                                                                                    </a>
-
-
-                                                                                    <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       class="wishlist_button_nopop"
-                                                                                       onclick="AddProductToWishlist(event, &#39;action_add&#39;, &#39;21&#39;, &#39;Mobility Quadpod Offset Cane with Ultra Stable Cane Tip&#39;, &#39;516&#39;, 1); return false;"
-                                                                                       rel="nofollow" title="Add to my wishlist">
-                                                                                           <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                                                           <span>Add to wishlist</span>
-                                                                                    </a>
-
-
-                                                                                    <a class="quick-view d-xl-none"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       data-link-action="quickview"
-                                                                                       data-img-cover="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/1/1/111-large_default.jpg"
-                                                                                       data-loading-text="Loading product info...">
-                                                                                           <i class="fa fa-eye" aria-hidden="true"></i>
-                                                                                           <span>Quick view</span>
-                                                                                    </a>
-
-                                                                             </div>
-                                                                      </div>
-                                                               </div>
-                                                        </article>
-
-
-                                                        <article class="product-miniature js-product-miniature" data-id-product="20"
-                                                                 data-id-product-attribute="484" itemscope=""
-                                                                 itemtype="http://schema.org/Product">
-                                                               <div class="product-miniature-container">
-                                                                      <div class="product-miniature-thumbnail">
-                                                                             <div class="product-thumbnail">
-
-                                                                                    <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=20&amp;id_product_attribute=484&amp;rewrite=gw22051-digital-blood-pressure-monitor&amp;controller=product&amp;id_lang=1#/8-color-white/25-base_material-shrome/30-weight_capacity-250_lbs"
-                                                                                       class="product-thumbnail-link">
-                                                                                           <div class="thumbnails-rollover horizontal_slide">
-                                                                                                  <img class="img-fluid" src="./Medic_files/105-home_default.webp"
-                                                                                                       alt="GW22051 Digital Blood Pressure Monitor"
-                                                                                                       data-full-size-image-url="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/0/5/105-large_default.jpg">
-                                                                                                  <img class="img-fluid" src="./Medic_files/106-home_default.jpg"
-                                                                                                       alt="GW22051 Digital Blood Pressure Monitor"
-                                                                                                       data-full-size-image-url="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/0/6/106-large_default.jpg">
-                                                                                           </div>
-
-                                                                                    </a>
-
-
-                                                                                    <ul class="product-flags">
-                                                                                           <li class="product-flag new">New</li>
-                                                                                    </ul>
-
-
-                                                                                    <a class="quick-view btn btn-sm btn-dark d-none d-xl-block"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       data-link-action="quickview"
-                                                                                       data-img-cover="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/0/5/105-large_default.jpg"
-                                                                                       data-loading-text="Loading product info...">
-                                                                                           Quick view
-                                                                                    </a>
-
-                                                                             </div>
-                                                                      </div>
-
-                                                                      <div class="product-miniature-information">
-
-                                                                             <p class="product-title h2" itemprop="name"><a
-                                                                                           href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=20&amp;id_product_attribute=484&amp;rewrite=gw22051-digital-blood-pressure-monitor&amp;controller=product&amp;id_lang=1#/8-color-white/25-base_material-shrome/30-weight_capacity-250_lbs">GW22051
-                                                                                           Digital Blood...</a></p>
-
-
-                                                                             <div class="product-description-short"> Yep! You are in the right place and
-                                                                                    don’t waste your precious time on hesitations. Our goal is...
-                                                                             </div>
-
-
-                                                                             <ul class="variant-links">
-                                                                                    <li class="variant-links-item">
-                                                                                           <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=20&amp;id_product_attribute=484&amp;rewrite=gw22051-digital-blood-pressure-monitor&amp;controller=product&amp;id_lang=1#/8-color-white/25-base_material-shrome/30-weight_capacity-250_lbs"
-                                                                                              class="color" title="White"
-                                                                                              style="background-color: #ffffff"><span
-                                                                                                         class="sr-only">White</span></a>
-                                                                                    </li>
-                                                                                    <li class="variant-links-item">
-                                                                                           <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_product=20&amp;id_product_attribute=489&amp;rewrite=gw22051-digital-blood-pressure-monitor&amp;controller=product&amp;id_lang=1#/14-color-blue/25-base_material-shrome/30-weight_capacity-250_lbs"
-                                                                                              class="color" title="Blue"
-                                                                                              style="background-color: #5D9CEC"><span
-                                                                                                         class="sr-only">Blue</span></a>
-                                                                                    </li>
-                                                                                    <span class="js-count count">0</span>
-                                                                             </ul>
-
-
-                                                                             <div class="product-price">
-
-
-                                                                                    <span class="sr-only">Price</span>
-                                                                                    <span itemprop="price" class="price">$20.00</span>
-
-
-                                                                             </div>
-
-
-                                                                             <div class="product-buttons">
-                                                                                    <a class="add-to-cart"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?controller=cart&amp;add=1&amp;id_product=20&amp;id_product_attribute=484&amp;token=3b8f4baf9481f88f849f6dca5d09813f"
-                                                                                       rel="nofollow" data-id-product="20" data-id-product-attribute="484"
-                                                                                       data-link-action="add-to-cart">
-                                                                                           <i class="material-icons-shopping_cart" aria-hidden="true"></i>
-                                                                                           <span>Add to cart</span>
-                                                                                    </a>
-                                                                             </div>
-
-                                                                             <div class="functional-buttons">
-                                                                                    <a class="js-compare-button compare-button"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       data-id-product="20" data-action="add-product"
-                                                                                       title="Add to Compare">
-                                                                                           <i class="fa fa-balance-scale" aria-hidden="true"></i>
-                                                                                           <span>Add to compare</span>
-                                                                                    </a>
-
-
-                                                                                    <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       class="wishlist_button_nopop"
-                                                                                       onclick="AddProductToWishlist(event, &#39;action_add&#39;, &#39;20&#39;, &#39;GW22051 Digital Blood Pressure Monitor&#39;, &#39;484&#39;, 1); return false;"
-                                                                                       rel="nofollow" title="Add to my wishlist">
-                                                                                           <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                                                           <span>Add to wishlist</span>
-                                                                                    </a>
-
-
-                                                                                    <a class="quick-view d-xl-none"
-                                                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                                                                                       data-link-action="quickview"
-                                                                                       data-img-cover="https://ld-prestashop.template-help.com/prestashop_22327/img/p/1/0/5/105-large_default.jpg"
-                                                                                       data-loading-text="Loading product info...">
-                                                                                           <i class="fa fa-eye" aria-hidden="true"></i>
-                                                                                           <span>Quick view</span>
-                                                                                    </a>
-
-                                                                             </div>
-                                                                      </div>
-                                                               </div>
-                                                        </article>
-
+                                                        <?php } }?>
                                                  </div>
                                           </section>
 
