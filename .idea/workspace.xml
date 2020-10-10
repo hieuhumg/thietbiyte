@@ -2,115 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a51e16e-a197-4732-8555-a2a297d37022" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/143-home_default.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/144-home_default.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/155-home_default.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/156-home_default.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/161-home_default.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/162-home_default.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/FtbFNqIyTnrFDbb3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/Header-1.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/Home-1.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/TopColumn-1.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/a355190ffe34d5f4d68f7f588e0d482abb8227b9_Rectangle.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/advertisement.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/ajax-wishlists.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/analytics.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/bRyOEjD7A1LQN4d2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/ccd1fcee00c0fb2820f949391ade42f2a0da890f_Rectangle (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/core.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/custom.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/ec.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/front_wishlists.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/gtm.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/homeslider.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/hoverIntent.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jquery-ui.min.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jquery.autocomplete.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jquery.countdown.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jquery.ez-plus.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jquery.rd-parallax.min.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jquery.vide.min.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jquery.youtubebackground.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jxblog.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jxcompareproduct.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jxdaydeal.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jxfeaturedposts.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jxgooglemap.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jxheaderaccount.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jxmediaparallax.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jxmegalayout.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jxmegamenu.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jxproductlistgallery.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jxproductzoomer.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jxsearch.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jxwl_row_1.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jxwl_row_2.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jxwl_row_3.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/jxwl_row_4.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/medical-equipment-logo-1554821849.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/product-modals.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/ps_searchbar.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/ps_shoppingcart.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/ptCVDdDUCwRvMXG9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/responsiveslides.min.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/shift_worker.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/subtle_grayscale.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/superfish.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/swiper.min.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/theme.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/themeconfiglink.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/css/validate.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/143-home_default.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/144-home_default.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/155-home_default.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/156-home_default.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/161-home_default.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/162-home_default.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/FtbFNqIyTnrFDbb3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/Header-1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/Home-1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/TopColumn-1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/a355190ffe34d5f4d68f7f588e0d482abb8227b9_Rectangle.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/advertisement.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/bRyOEjD7A1LQN4d2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/ccd1fcee00c0fb2820f949391ade42f2a0da890f_Rectangle (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/core.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/ec.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/front_wishlists.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/homeslider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/jquery-ui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/jquery.autocomplete.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/jquery.ui.theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/jxblog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/jxblog.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/jxcompareproduct.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/jxdaydeal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/jxfeaturedposts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/jxgooglemap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/jxheaderaccount.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/jxmanufacturerblock.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/jxmediaparallax.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/jxmegalayout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/jxmegamenu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/jxproductlistgallery.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/jxproductsslider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/jxproductzoomer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/jxsearch.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/medical-equipment-logo-1554821849.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/modals.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/product.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/ptCVDdDUCwRvMXG9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/rd-parallax.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/swiper.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/theme.js.tải xuống" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/js/themeconfiglink.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/plugins/hello.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/template/homepage.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/template/homepage.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +31,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WG/Drhelen-code" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -166,6 +60,8 @@
       <workItem from="1601873631585" duration="4478000" />
       <workItem from="1601953876252" duration="6542000" />
       <workItem from="1602039432028" duration="8707000" />
+      <workItem from="1602151499095" duration="1096000" />
+      <workItem from="1602213115029" duration="9185000" />
     </task>
     <servers />
   </component>
