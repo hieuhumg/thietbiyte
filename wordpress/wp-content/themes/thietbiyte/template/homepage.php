@@ -1512,46 +1512,29 @@ $post_noibat = $query_noibat->posts;
                     <?php } ?>
             </div>
         </div>
-        <div class="wrapper it_PJNVNTNFESXC bottom-items mt-5 align-items-center">
+        <div class="wrapper dichvu  bottom-items mt-5 align-items-center">
             <div class="">
-                <div class="rd-parallax-inner"
-                     style="position: fixed; top: 0px; margin-top: 0px; padding: 0px; width: 1519px; transform: translate3d(0px, 2206.96px, 0px);">
-                    <div class="rd-parallax-layer" data-offset="0" data-speed="0.8" data-type="media" data-fade="false"
-                         data-url="<?= get_template_directory_uri() ?>/dist/images/bg-items.jpg" data-direction="normal"
-                         style="position: fixed; background-image: url(<?= get_template_directory_uri() ?>/dist/images/bg-banner.jpg); height: 602px; transform: translate3d(0px, -1765.57px, 0px);"></div>
-                    <div class="" style="
-                    position: relative; height: 250px;">
+                <div class="rd-parallax-inner">
+                    <div class="rd-parallax-layer fixed_dichvu" data-offset="0" data-speed="0.8" data-type="media" data-fade="false"
+                         data-url="<?= get_field('banner_service') ?>" data-direction="normal" style="background: url(<?= get_field('banner_service') ?>) "></div>
+                    <div class="">
                         <div class="" data-offset="0" data-speed="0" data-type="html" data-fade="false"
-                             data-direction="normal"
-                             style="position: fixed; width: 1519px; transform: translate3d(0px, 0px, 0px);">
+                             data-direction="normal">
                             <div class="row  container paralax-bottom align-items-center">
+                                <?php
+                                    $noi_dung_dich_vu = get_field('noi_dung_dich_vu');
+                                    foreach ($noi_dung_dich_vu as $item) {
+                                ?>
                                 <div class="it_WJIAVJVVYIJU col-12  col-md-4    title-none">
                                     <div class="jxml-html bottom-banner bb-1 ">
                                         <h3 class="jxml-html-title">bottom-banner-1</h3>
                                         <div class="jxml-html-description">
-                                            <h4>Support 24/7</h4>
-                                            <p>Contact us 24 hours a day, 7 days a week</p>
+                                            <h4><?= $item['title_service']; ?></h4>
+                                            <p><?= $item['content_service']; ?> </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="it_LHXIWEPUVOBV col-12  col-md-4    title-none">
-                                    <div class="jxml-html bottom-banner bb-2 ">
-                                        <h3 class="jxml-html-title">bottom-banner-2</h3>
-                                        <div class="jxml-html-description">
-                                            <h4>30 days return</h4>
-                                            <p>Simply return it within 24 days</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="it_DQYQLTCTKYKT col-12  col-md-4    title-none">
-                                    <div class="jxml-html bottom-banner bb-3 ">
-                                        <h3 class="jxml-html-title">bottom-banner-3</h3>
-                                        <div class="jxml-html-description">
-                                            <h4>Free shipping</h4>
-                                            <p>Free shipping on order above $99</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                   <?php } ?>
                             </div>
                         </div>
                     </div>

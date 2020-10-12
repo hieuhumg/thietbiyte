@@ -42,7 +42,7 @@
           href="https://ld-prestashop.template-help.com/prestashop_22327/img/favicon.ico?1554821849">
 
 
-    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/dist/css/font-awesome.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/dist/font/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/dist/css/swiper.min.css" type="text/css" media="all">
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/dist/css/theme.css" type="text/css" media="all">
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/dist/css/modals.css" type="text/css" media="all">
@@ -62,7 +62,7 @@
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/dist/css/jxcompareproduct.css" type="text/css" media="all">
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/dist/css/jxdaydeal.css" type="text/css" media="all">
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/dist/css/jxfeaturedposts.css" type="text/css" media="all">
-    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/dist/css/jxmegalayout.css" type="text/css" media="all">
+    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/dist/css/custom-style.css" type="text/css" media="all">
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/dist/css/themeconfiglink.css" type="text/css" media="all">
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/dist/css/Header-1.css" type="text/css" media="all">
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/dist/css/Home-1.css" type="text/css" media="all">
@@ -413,505 +413,505 @@
                     <div class="mobile_for_user icon-none"></div>
                 </div>
             </div>
-            <div class="row it_AFHENLJERUGK py-2">
-                <div class="it_GHMNDWGABQUI col-12 col-sm-6 col-md-3 col-lg-4   d-flex">
-                    <div class="module desktop_for_languages">
-                        <div class="language-selector js-dropdown dropdown">
-                            <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                               class="toggle-wrapper d-none d-md-block" data-toggle="dropdown" aria-haspopup="true"
-                               aria-expanded="false" aria-label="Language dropdown">
-                                English
-                                <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="language-selector-label">
-                                <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=1"
-                                   class="dropdown-item active" data-iso-code="en">English</a>
-                                <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=2"
-                                   class="dropdown-item" data-iso-code="de">Deutsch</a>
-                                <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=3"
-                                   class="dropdown-item" data-iso-code="ru">Русский</a>
-                                <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=4"
-                                   class="dropdown-item" data-iso-code="es">Español</a>
-                                <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=5"
-                                   class="dropdown-item" data-iso-code="fr">Français</a>
-                            </div>
-                            <select class="custom-select js-link d-md-none" aria-labelledby="language-selector-label">
-                                <option value="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=1"
-                                        selected="selected" data-iso-code="en">
-                                    en
-                                </option>
-                                <option value="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=2"
-                                        data-iso-code="de">
-                                    de
-                                </option>
-                                <option value="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=3"
-                                        data-iso-code="ru">
-                                    ru
-                                </option>
-                                <option value="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=4"
-                                        data-iso-code="es">
-                                    es
-                                </option>
-                                <option value="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=5"
-                                        data-iso-code="fr">
-                                    fr
-                                </option>
-                            </select>
-                            <i class="fa fa-angle-down d-md-none"></i>
-                        </div>
-                    </div>
-                    <div class="module desktop_for_currencies">
-                        <div class="currency-selector js-dropdown dropdown">
-                            <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                               class="toggle-wrapper d-none d-md-block" data-toggle="dropdown" aria-haspopup="true"
-                               aria-expanded="false" aria-label="Currency dropdown">
-                                USD
-                                <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="currency-selector-label">
-                                <a title="Euro" rel="nofollow"
-                                   href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=1&amp;SubmitCurrency=1&amp;id_currency=2"
-                                   class="dropdown-item">EUR</a>
-                                <a title="US Dollar" rel="nofollow"
-                                   href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=1&amp;SubmitCurrency=1&amp;id_currency=1"
-                                   class="dropdown-item active">USD</a>
-                            </div>
-                            <select class="custom-select js-link d-md-none" aria-labelledby="currency-selector-label">
-                                <option value="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=1&amp;SubmitCurrency=1&amp;id_currency=2">
-                                    €
-                                </option>
-                                <option value="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=1&amp;SubmitCurrency=1&amp;id_currency=1"
-                                        selected="selected">$
-                                </option>
-                            </select>
-                            <i class="fa fa-angle-down d-md-none"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="it_GARHBBMVAHBH col-12 col-sm-12 col-md-9 col-lg-8   d-flex flex-wrap justify-content-center justify-content-md-end mt-2 mt-md-0">
-                    <div class="module title-none">
-                        <div class="link-block">
-                            <h3 class="h5 d-none d-md-block link_block_displayNav">top-menu</h3>
-                            <h3 class="h4 d-flex justify-content-between align-items-center collapsed d-md-none link_block_displayNav"
-                                data-target="#link_block_displayNav" data-toggle="collapse">
-                                top-menu
-                                <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            </h3>
-                            <ul id="link_block_displayNav" class="list-default collapse d-md-block">
-                                <li>
-                                    <a id="link-custom-page-Welcome to our online store!-6" class="custom-page-link"
-                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_cms=4&amp;controller=cms"
-                                       title="">
-                                        Welcome to our online store!
-                                    </a>
-                                </li>
-                                <li>
-                                    <a id="link-custom-page-Blog-6" class="custom-page-link"
-                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?fc=module&amp;module=jxblog&amp;controller=categories"
-                                       title="">
-                                        Blog
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="module icon-none desktop_for_compare">
-                        <div class="compare-header"
-                             data-refresh-url="https://ld-prestashop.template-help.com/prestashop_22327/index.php?fc=module&amp;module=jxcompareproduct&amp;controller=ajax&amp;id_lang=1"
-                             data-compare-max="2" data-empty-text="No products to compare"
-                             data-max-alert-message="Only 2 products can be compared">
-                            <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                               class="compare-products">
-                                <i class="fa fa-clone" aria-hidden="true"></i>
-                                <span>Compare(</span><span class="compare-counter">0</span><span>)</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="module icon-none desktop_for_wishlist">
-                        <div class="jxwishlist-link">
-                            <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?fc=module&amp;module=jxwishlist&amp;controller=wishlists&amp;id_lang=1">
-                                <i class="fa fa-heart" aria-hidden="true"></i>
-                                <span>My wishlists</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="module icon-none desktop_for_user">
-                        <div class="jx-header-account dropdown js-dropdown">
-                            <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#" role="button"
-                               data-toggle="dropdown" class="dropdown-toggle">
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                                <span>
-              Sign in
-          </span>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right">
-
-                                <div class="jx-header-account-wrapper onecolumn">
-                                    <div id="login-content-displayNav2"
-                                         class="header-login-content login-content active">
-                                        <form action="https://ld-prestashop.template-help.com/prestashop_22327/index.php?controller=authentication"
-                                              method="post">
-                                            <h2>Sign in</h2>
-                                            <div class="main-help-block">
-                                                <ul></ul>
-                                            </div>
-                                            <section>
-
-
-                                                <input type="hidden" name="back" value="">
-
-
-                                                <div class="form-group row no-gutters">
-
-                                                    <div class="label-auto-width col-3 col-sm-2">
-                                                        <label>
-                                                            Email
-                                                        </label>
-                                                    </div>
-
-
-                                                    <div class="form-control-content col">
-
-
-                                                        <input class="form-control" name="email" type="email" value=""
-                                                               required="">
-
-
-                                                    </div>
-
-
-                                                </div>
-
-
-                                                <div class="form-group row no-gutters">
-
-                                                    <div class="label-auto-width col-3 col-sm-2">
-                                                        <label>
-                                                            Password
-                                                        </label>
-                                                    </div>
-
-
-                                                    <div class="form-control-content col">
-
-
-                                                        <div class="input-group">
-                                                            <input class="form-control js-visible-password"
-                                                                   name="password" type="password" value=""
-                                                                   pattern=".{5,}" required="">
-                                                            <div class="input-group-text" data-action="show-password">
-                                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
-
-
-                                                </div>
-
-
-                                            </section>
-                                            <div class="header-login-footer">
-                                                <button type="submit" name="HeaderSubmitLogin"
-                                                        class="btn btn-primary mb-1">
-                                                    Sign in
-                                                </button>
-                                                <div class="nav d-block mb-3 text-right">
-                                                    <a class="forgot-password"
-                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#forgot-password-content-displayNav2"
-                                                       data-toggle="tab">
-                                                        Forgot your password?
-                                                    </a>
-                                                </div>
-                                                <div class="register-link nav d-block mb-4">
-                                                    <a class="btn btn-dark"
-                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#create-account-content-displayNav2"
-                                                       data-toggle="tab" data-link-action="display-register-form">
-                                                        No account? Create one here
-                                                    </a>
-                                                </div>
-
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div id="create-account-content-displayNav2"
-                                         class="header-login-content create-account-content">
-                                        <form action="https://ld-prestashop.template-help.com/prestashop_22327/index.php?controller=authentication"
-                                              method="post" class="std">
-                                            <h2>Create an account</h2>
-
-                                            <div class="main-help-block">
-                                                <ul></ul>
-                                            </div>
-                                            <section>
-
-
-                                                <input type="hidden" name="id_customer" value="">
-
-
-                                                <div class="form-group row no-gutters form-check-radio">
-
-                                                    <div class="label-auto-width col-3 col-sm-2">
-                                                    </div>
-
-
-                                                    <div class="form-control-content col">
-
-
-                                                        <div class="custom-control custom-radio custom-control-inline">
-                                                            <label>
-                                                                <input class="custom-control-input" name="id_gender"
-                                                                       type="radio" value="1">
-                                                                <span class="custom-control-label">Mr.</span>
-                                                            </label>
-                                                        </div>
-                                                        <div class="custom-control custom-radio custom-control-inline">
-                                                            <label>
-                                                                <input class="custom-control-input" name="id_gender"
-                                                                       type="radio" value="2">
-                                                                <span class="custom-control-label">Mrs.</span>
-                                                            </label>
-                                                        </div>
-
-
-                                                    </div>
-
-
-                                                </div>
-
-
-                                                <div class="form-group row no-gutters">
-
-                                                    <div class="label-auto-width col-3 col-sm-2">
-                                                        <label>
-                                                            First name
-                                                        </label>
-                                                    </div>
-
-
-                                                    <div class="form-control-content col">
-
-
-                                                        <input class="form-control" name="firstname" type="text"
-                                                               value="" required="">
-
-
-                                                    </div>
-
-
-                                                </div>
-
-
-                                                <div class="form-group row no-gutters">
-
-                                                    <div class="label-auto-width col-3 col-sm-2">
-                                                        <label>
-                                                            Last name
-                                                        </label>
-                                                    </div>
-
-
-                                                    <div class="form-control-content col">
-
-
-                                                        <input class="form-control" name="lastname" type="text" value=""
-                                                               required="">
-
-
-                                                    </div>
-
-
-                                                </div>
-
-
-                                                <div class="form-group row no-gutters">
-
-                                                    <div class="label-auto-width col-3 col-sm-2">
-                                                        <label>
-                                                            Email
-                                                        </label>
-                                                    </div>
-
-
-                                                    <div class="form-control-content col">
-
-
-                                                        <input class="form-control" name="email" type="email" value=""
-                                                               required="">
-
-
-                                                    </div>
-
-
-                                                </div>
-
-
-                                                <div class="form-group row no-gutters">
-
-                                                    <div class="label-auto-width col-3 col-sm-2">
-                                                        <label>
-                                                            Password
-                                                        </label>
-                                                    </div>
-
-
-                                                    <div class="form-control-content col">
-
-
-                                                        <div class="input-group">
-                                                            <input class="form-control js-visible-password"
-                                                                   name="password" type="password" value=""
-                                                                   pattern=".{5,}" required="">
-                                                            <div class="input-group-text" data-action="show-password">
-                                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
-
-
-                                                </div>
-
-
-                                                <div class="form-group row no-gutters">
-
-                                                    <div class="label-auto-width col-3 col-sm-2">
-                                                        <label>
-                                                            Birthdate
-                                                        </label>
-                                                    </div>
-
-
-                                                    <div class="form-control-content col">
-
-
-                                                        <input class="form-control" name="birthday" type="text" value=""
-                                                               placeholder="MM/DD/YYYY">
-                                                        <small class="form-text text-muted">
-                                                            (E.g.: 05/31/1970)
-                                                        </small>
-
-
-                                                    </div>
-
-
-                                                </div>
-
-
-                                                <div class="form-group row no-gutters form-check-radio">
-
-                                                    <div class="label-auto-width col-3 col-sm-2">
-                                                    </div>
-
-
-                                                    <div class="form-control-content col">
-
-
-                                                        <div class="custom-control custom-checkbox">
-                                                            <label>
-                                                                <input class="custom-control-input" name="optin"
-                                                                       type="checkbox" value="1">
-                                                                <span class="custom-control-label">Receive offers from our partners</span>
-                                                            </label>
-                                                        </div>
-
-
-                                                    </div>
-
-
-                                                </div>
-
-
-                                                <div class="form-group row no-gutters form-check-radio">
-
-                                                    <div class="label-auto-width col-3 col-sm-2">
-                                                    </div>
-
-
-                                                    <div class="form-control-content col">
-
-
-                                                        <div class="custom-control custom-checkbox">
-                                                            <label>
-                                                                <input class="custom-control-input" name="newsletter"
-                                                                       type="checkbox" value="1">
-                                                                <span class="custom-control-label">Sign up for our newsletter<br><em>You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.</em></span>
-                                                            </label>
-                                                        </div>
-
-
-                                                    </div>
-
-
-                                                </div>
-
-
-                                            </section>
-                                            <div class="header-login-footer">
-
-                                                <div class="submit clearfix">
-                                                    <input type="hidden" name="email_create" value="1">
-                                                    <input type="hidden" name="is_new_customer" value="1">
-                                                    <input type="hidden" class="hidden" name="back" value="my-account">
-                                                    <button type="submit" name="submitAccount"
-                                                            class="btn btn-primary mb-4">
-                                                        Register
-                                                    </button>
-                                                    <div class="button-login nav d-block">
-                                                        <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#login-content-displayNav2"
-                                                           data-toggle="tab" class="btn btn-dark">
-                                                            Back to login
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div id="forgot-password-content-displayNav2"
-                                         class="header-login-content forgot-password-content">
-                                        <form action="https://ld-prestashop.template-help.com/prestashop_22327/index.php"
-                                              method="post" class="std">
-                                            <section>
-                                                <h2>Forgot your password?</h2>
-                                                <div class="main-help-block">
-                                                    <ul></ul>
-                                                </div>
-                                                <p>Please enter the email address you used to register. You will receive
-                                                    a temporary link to reset your password.</p>
-                                                <fieldset>
-                                                    <div class="form-group">
-                                                        <label class="form-control-label required">Email</label>
-                                                        <div class="email">
-                                                            <input class="form-control" type="email" name="email"
-                                                                   value="" required="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="submit clearfix">
-                                                        <button class="form-control-submit btn btn-primary mb-4"
-                                                                name="submit" type="submit">
-                                                            Send reset link
-                                                        </button>
-                                                    </div>
-                                                </fieldset>
-                                            </section>
-                                            <div class="header-login-footer">
-                                                <div class="button-login nav d-block">
-                                                    <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#login-content-displayNav2"
-                                                       data-toggle="tab" class="btn btn-dark">
-                                                        Back to login
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!--            <div class="row it_AFHENLJERUGK py-2">-->
+<!--                <div class="it_GHMNDWGABQUI col-12 col-sm-6 col-md-3 col-lg-4   d-flex">-->
+<!--                    <div class="module desktop_for_languages">-->
+<!--                        <div class="language-selector js-dropdown dropdown">-->
+<!--                            <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"-->
+<!--                               class="toggle-wrapper d-none d-md-block" data-toggle="dropdown" aria-haspopup="true"-->
+<!--                               aria-expanded="false" aria-label="Language dropdown">-->
+<!--                                English-->
+<!--                                <i class="fa fa-angle-down" aria-hidden="true"></i>-->
+<!--                            </a>-->
+<!--                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="language-selector-label">-->
+<!--                                <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=1"-->
+<!--                                   class="dropdown-item active" data-iso-code="en">English</a>-->
+<!--                                <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=2"-->
+<!--                                   class="dropdown-item" data-iso-code="de">Deutsch</a>-->
+<!--                                <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=3"-->
+<!--                                   class="dropdown-item" data-iso-code="ru">Русский</a>-->
+<!--                                <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=4"-->
+<!--                                   class="dropdown-item" data-iso-code="es">Español</a>-->
+<!--                                <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=5"-->
+<!--                                   class="dropdown-item" data-iso-code="fr">Français</a>-->
+<!--                            </div>-->
+<!--                            <select class="custom-select js-link d-md-none" aria-labelledby="language-selector-label">-->
+<!--                                <option value="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=1"-->
+<!--                                        selected="selected" data-iso-code="en">-->
+<!--                                    en-->
+<!--                                </option>-->
+<!--                                <option value="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=2"-->
+<!--                                        data-iso-code="de">-->
+<!--                                    de-->
+<!--                                </option>-->
+<!--                                <option value="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=3"-->
+<!--                                        data-iso-code="ru">-->
+<!--                                    ru-->
+<!--                                </option>-->
+<!--                                <option value="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=4"-->
+<!--                                        data-iso-code="es">-->
+<!--                                    es-->
+<!--                                </option>-->
+<!--                                <option value="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=5"-->
+<!--                                        data-iso-code="fr">-->
+<!--                                    fr-->
+<!--                                </option>-->
+<!--                            </select>-->
+<!--                            <i class="fa fa-angle-down d-md-none"></i>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="module desktop_for_currencies">-->
+<!--                        <div class="currency-selector js-dropdown dropdown">-->
+<!--                            <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"-->
+<!--                               class="toggle-wrapper d-none d-md-block" data-toggle="dropdown" aria-haspopup="true"-->
+<!--                               aria-expanded="false" aria-label="Currency dropdown">-->
+<!--                                USD-->
+<!--                                <i class="fa fa-angle-down" aria-hidden="true"></i>-->
+<!--                            </a>-->
+<!--                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="currency-selector-label">-->
+<!--                                <a title="Euro" rel="nofollow"-->
+<!--                                   href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=1&amp;SubmitCurrency=1&amp;id_currency=2"-->
+<!--                                   class="dropdown-item">EUR</a>-->
+<!--                                <a title="US Dollar" rel="nofollow"-->
+<!--                                   href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=1&amp;SubmitCurrency=1&amp;id_currency=1"-->
+<!--                                   class="dropdown-item active">USD</a>-->
+<!--                            </div>-->
+<!--                            <select class="custom-select js-link d-md-none" aria-labelledby="currency-selector-label">-->
+<!--                                <option value="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=1&amp;SubmitCurrency=1&amp;id_currency=2">-->
+<!--                                    €-->
+<!--                                </option>-->
+<!--                                <option value="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_lang=1&amp;SubmitCurrency=1&amp;id_currency=1"-->
+<!--                                        selected="selected">$-->
+<!--                                </option>-->
+<!--                            </select>-->
+<!--                            <i class="fa fa-angle-down d-md-none"></i>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="it_GARHBBMVAHBH col-12 col-sm-12 col-md-9 col-lg-8   d-flex flex-wrap justify-content-center justify-content-md-end mt-2 mt-md-0">-->
+<!--                    <div class="module title-none">-->
+<!--                        <div class="link-block">-->
+<!--                            <h3 class="h5 d-none d-md-block link_block_displayNav">top-menu</h3>-->
+<!--                            <h3 class="h4 d-flex justify-content-between align-items-center collapsed d-md-none link_block_displayNav"-->
+<!--                                data-target="#link_block_displayNav" data-toggle="collapse">-->
+<!--                                top-menu-->
+<!--                                <i class="fa fa-angle-down" aria-hidden="true"></i>-->
+<!--                            </h3>-->
+<!--                            <ul id="link_block_displayNav" class="list-default collapse d-md-block">-->
+<!--                                <li>-->
+<!--                                    <a id="link-custom-page-Welcome to our online store!-6" class="custom-page-link"-->
+<!--                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?id_cms=4&amp;controller=cms"-->
+<!--                                       title="">-->
+<!--                                        Welcome to our online store!-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a id="link-custom-page-Blog-6" class="custom-page-link"-->
+<!--                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?fc=module&amp;module=jxblog&amp;controller=categories"-->
+<!--                                       title="">-->
+<!--                                        Blog-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="module icon-none desktop_for_compare">-->
+<!--                        <div class="compare-header"-->
+<!--                             data-refresh-url="https://ld-prestashop.template-help.com/prestashop_22327/index.php?fc=module&amp;module=jxcompareproduct&amp;controller=ajax&amp;id_lang=1"-->
+<!--                             data-compare-max="2" data-empty-text="No products to compare"-->
+<!--                             data-max-alert-message="Only 2 products can be compared">-->
+<!--                            <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"-->
+<!--                               class="compare-products">-->
+<!--                                <i class="fa fa-clone" aria-hidden="true"></i>-->
+<!--                                <span>Compare(</span><span class="compare-counter">0</span><span>)</span>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="module icon-none desktop_for_wishlist">-->
+<!--                        <div class="jxwishlist-link">-->
+<!--                            <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php?fc=module&amp;module=jxwishlist&amp;controller=wishlists&amp;id_lang=1">-->
+<!--                                <i class="fa fa-heart" aria-hidden="true"></i>-->
+<!--                                <span>My wishlists</span>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="module icon-none desktop_for_user">-->
+<!--                        <div class="jx-header-account dropdown js-dropdown">-->
+<!--                            <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#" role="button"-->
+<!--                               data-toggle="dropdown" class="dropdown-toggle">-->
+<!--                                <i class="fa fa-user" aria-hidden="true"></i>-->
+<!--                                <span>-->
+<!--              Sign in-->
+<!--          </span>-->
+<!--                            </a>-->
+<!--                            <div class="dropdown-menu dropdown-menu-right">-->
+<!---->
+<!--                                <div class="jx-header-account-wrapper onecolumn">-->
+<!--                                    <div id="login-content-displayNav2"-->
+<!--                                         class="header-login-content login-content active">-->
+<!--                                        <form action="https://ld-prestashop.template-help.com/prestashop_22327/index.php?controller=authentication"-->
+<!--                                              method="post">-->
+<!--                                            <h2>Sign in</h2>-->
+<!--                                            <div class="main-help-block">-->
+<!--                                                <ul></ul>-->
+<!--                                            </div>-->
+<!--                                            <section>-->
+<!---->
+<!---->
+<!--                                                <input type="hidden" name="back" value="">-->
+<!---->
+<!---->
+<!--                                                <div class="form-group row no-gutters">-->
+<!---->
+<!--                                                    <div class="label-auto-width col-3 col-sm-2">-->
+<!--                                                        <label>-->
+<!--                                                            Email-->
+<!--                                                        </label>-->
+<!--                                                    </div>-->
+<!---->
+<!---->
+<!--                                                    <div class="form-control-content col">-->
+<!---->
+<!---->
+<!--                                                        <input class="form-control" name="email" type="email" value=""-->
+<!--                                                               required="">-->
+<!---->
+<!---->
+<!--                                                    </div>-->
+<!---->
+<!---->
+<!--                                                </div>-->
+<!---->
+<!---->
+<!--                                                <div class="form-group row no-gutters">-->
+<!---->
+<!--                                                    <div class="label-auto-width col-3 col-sm-2">-->
+<!--                                                        <label>-->
+<!--                                                            Password-->
+<!--                                                        </label>-->
+<!--                                                    </div>-->
+<!---->
+<!---->
+<!--                                                    <div class="form-control-content col">-->
+<!---->
+<!---->
+<!--                                                        <div class="input-group">-->
+<!--                                                            <input class="form-control js-visible-password"-->
+<!--                                                                   name="password" type="password" value=""-->
+<!--                                                                   pattern=".{5,}" required="">-->
+<!--                                                            <div class="input-group-text" data-action="show-password">-->
+<!--                                                                <i class="fa fa-eye" aria-hidden="true"></i>-->
+<!--                                                            </div>-->
+<!--                                                        </div>-->
+<!---->
+<!---->
+<!--                                                    </div>-->
+<!---->
+<!---->
+<!--                                                </div>-->
+<!---->
+<!---->
+<!--                                            </section>-->
+<!--                                            <div class="header-login-footer">-->
+<!--                                                <button type="submit" name="HeaderSubmitLogin"-->
+<!--                                                        class="btn btn-primary mb-1">-->
+<!--                                                    Sign in-->
+<!--                                                </button>-->
+<!--                                                <div class="nav d-block mb-3 text-right">-->
+<!--                                                    <a class="forgot-password"-->
+<!--                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#forgot-password-content-displayNav2"-->
+<!--                                                       data-toggle="tab">-->
+<!--                                                        Forgot your password?-->
+<!--                                                    </a>-->
+<!--                                                </div>-->
+<!--                                                <div class="register-link nav d-block mb-4">-->
+<!--                                                    <a class="btn btn-dark"-->
+<!--                                                       href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#create-account-content-displayNav2"-->
+<!--                                                       data-toggle="tab" data-link-action="display-register-form">-->
+<!--                                                        No account? Create one here-->
+<!--                                                    </a>-->
+<!--                                                </div>-->
+<!---->
+<!--                                            </div>-->
+<!--                                        </form>-->
+<!--                                    </div>-->
+<!--                                    <div id="create-account-content-displayNav2"-->
+<!--                                         class="header-login-content create-account-content">-->
+<!--                                        <form action="https://ld-prestashop.template-help.com/prestashop_22327/index.php?controller=authentication"-->
+<!--                                              method="post" class="std">-->
+<!--                                            <h2>Create an account</h2>-->
+<!---->
+<!--                                            <div class="main-help-block">-->
+<!--                                                <ul></ul>-->
+<!--                                            </div>-->
+<!--                                            <section>-->
+<!---->
+<!---->
+<!--                                                <input type="hidden" name="id_customer" value="">-->
+<!---->
+<!---->
+<!--                                                <div class="form-group row no-gutters form-check-radio">-->
+<!---->
+<!--                                                    <div class="label-auto-width col-3 col-sm-2">-->
+<!--                                                    </div>-->
+<!---->
+<!---->
+<!--                                                    <div class="form-control-content col">-->
+<!---->
+<!---->
+<!--                                                        <div class="custom-control custom-radio custom-control-inline">-->
+<!--                                                            <label>-->
+<!--                                                                <input class="custom-control-input" name="id_gender"-->
+<!--                                                                       type="radio" value="1">-->
+<!--                                                                <span class="custom-control-label">Mr.</span>-->
+<!--                                                            </label>-->
+<!--                                                        </div>-->
+<!--                                                        <div class="custom-control custom-radio custom-control-inline">-->
+<!--                                                            <label>-->
+<!--                                                                <input class="custom-control-input" name="id_gender"-->
+<!--                                                                       type="radio" value="2">-->
+<!--                                                                <span class="custom-control-label">Mrs.</span>-->
+<!--                                                            </label>-->
+<!--                                                        </div>-->
+<!---->
+<!---->
+<!--                                                    </div>-->
+<!---->
+<!---->
+<!--                                                </div>-->
+<!---->
+<!---->
+<!--                                                <div class="form-group row no-gutters">-->
+<!---->
+<!--                                                    <div class="label-auto-width col-3 col-sm-2">-->
+<!--                                                        <label>-->
+<!--                                                            First name-->
+<!--                                                        </label>-->
+<!--                                                    </div>-->
+<!---->
+<!---->
+<!--                                                    <div class="form-control-content col">-->
+<!---->
+<!---->
+<!--                                                        <input class="form-control" name="firstname" type="text"-->
+<!--                                                               value="" required="">-->
+<!---->
+<!---->
+<!--                                                    </div>-->
+<!---->
+<!---->
+<!--                                                </div>-->
+<!---->
+<!---->
+<!--                                                <div class="form-group row no-gutters">-->
+<!---->
+<!--                                                    <div class="label-auto-width col-3 col-sm-2">-->
+<!--                                                        <label>-->
+<!--                                                            Last name-->
+<!--                                                        </label>-->
+<!--                                                    </div>-->
+<!---->
+<!---->
+<!--                                                    <div class="form-control-content col">-->
+<!---->
+<!---->
+<!--                                                        <input class="form-control" name="lastname" type="text" value=""-->
+<!--                                                               required="">-->
+<!---->
+<!---->
+<!--                                                    </div>-->
+<!---->
+<!---->
+<!--                                                </div>-->
+<!---->
+<!---->
+<!--                                                <div class="form-group row no-gutters">-->
+<!---->
+<!--                                                    <div class="label-auto-width col-3 col-sm-2">-->
+<!--                                                        <label>-->
+<!--                                                            Email-->
+<!--                                                        </label>-->
+<!--                                                    </div>-->
+<!---->
+<!---->
+<!--                                                    <div class="form-control-content col">-->
+<!---->
+<!---->
+<!--                                                        <input class="form-control" name="email" type="email" value=""-->
+<!--                                                               required="">-->
+<!---->
+<!---->
+<!--                                                    </div>-->
+<!---->
+<!---->
+<!--                                                </div>-->
+<!---->
+<!---->
+<!--                                                <div class="form-group row no-gutters">-->
+<!---->
+<!--                                                    <div class="label-auto-width col-3 col-sm-2">-->
+<!--                                                        <label>-->
+<!--                                                            Password-->
+<!--                                                        </label>-->
+<!--                                                    </div>-->
+<!---->
+<!---->
+<!--                                                    <div class="form-control-content col">-->
+<!---->
+<!---->
+<!--                                                        <div class="input-group">-->
+<!--                                                            <input class="form-control js-visible-password"-->
+<!--                                                                   name="password" type="password" value=""-->
+<!--                                                                   pattern=".{5,}" required="">-->
+<!--                                                            <div class="input-group-text" data-action="show-password">-->
+<!--                                                                <i class="fa fa-eye" aria-hidden="true"></i>-->
+<!--                                                            </div>-->
+<!--                                                        </div>-->
+<!---->
+<!---->
+<!--                                                    </div>-->
+<!---->
+<!---->
+<!--                                                </div>-->
+<!---->
+<!---->
+<!--                                                <div class="form-group row no-gutters">-->
+<!---->
+<!--                                                    <div class="label-auto-width col-3 col-sm-2">-->
+<!--                                                        <label>-->
+<!--                                                            Birthdate-->
+<!--                                                        </label>-->
+<!--                                                    </div>-->
+<!---->
+<!---->
+<!--                                                    <div class="form-control-content col">-->
+<!---->
+<!---->
+<!--                                                        <input class="form-control" name="birthday" type="text" value=""-->
+<!--                                                               placeholder="MM/DD/YYYY">-->
+<!--                                                        <small class="form-text text-muted">-->
+<!--                                                            (E.g.: 05/31/1970)-->
+<!--                                                        </small>-->
+<!---->
+<!---->
+<!--                                                    </div>-->
+<!---->
+<!---->
+<!--                                                </div>-->
+<!---->
+<!---->
+<!--                                                <div class="form-group row no-gutters form-check-radio">-->
+<!---->
+<!--                                                    <div class="label-auto-width col-3 col-sm-2">-->
+<!--                                                    </div>-->
+<!---->
+<!---->
+<!--                                                    <div class="form-control-content col">-->
+<!---->
+<!---->
+<!--                                                        <div class="custom-control custom-checkbox">-->
+<!--                                                            <label>-->
+<!--                                                                <input class="custom-control-input" name="optin"-->
+<!--                                                                       type="checkbox" value="1">-->
+<!--                                                                <span class="custom-control-label">Receive offers from our partners</span>-->
+<!--                                                            </label>-->
+<!--                                                        </div>-->
+<!---->
+<!---->
+<!--                                                    </div>-->
+<!---->
+<!---->
+<!--                                                </div>-->
+<!---->
+<!---->
+<!--                                                <div class="form-group row no-gutters form-check-radio">-->
+<!---->
+<!--                                                    <div class="label-auto-width col-3 col-sm-2">-->
+<!--                                                    </div>-->
+<!---->
+<!---->
+<!--                                                    <div class="form-control-content col">-->
+<!---->
+<!---->
+<!--                                                        <div class="custom-control custom-checkbox">-->
+<!--                                                            <label>-->
+<!--                                                                <input class="custom-control-input" name="newsletter"-->
+<!--                                                                       type="checkbox" value="1">-->
+<!--                                                                <span class="custom-control-label">Sign up for our newsletter<br><em>You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.</em></span>-->
+<!--                                                            </label>-->
+<!--                                                        </div>-->
+<!---->
+<!---->
+<!--                                                    </div>-->
+<!---->
+<!---->
+<!--                                                </div>-->
+<!---->
+<!---->
+<!--                                            </section>-->
+<!--                                            <div class="header-login-footer">-->
+<!---->
+<!--                                                <div class="submit clearfix">-->
+<!--                                                    <input type="hidden" name="email_create" value="1">-->
+<!--                                                    <input type="hidden" name="is_new_customer" value="1">-->
+<!--                                                    <input type="hidden" class="hidden" name="back" value="my-account">-->
+<!--                                                    <button type="submit" name="submitAccount"-->
+<!--                                                            class="btn btn-primary mb-4">-->
+<!--                                                        Register-->
+<!--                                                    </button>-->
+<!--                                                    <div class="button-login nav d-block">-->
+<!--                                                        <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#login-content-displayNav2"-->
+<!--                                                           data-toggle="tab" class="btn btn-dark">-->
+<!--                                                            Back to login-->
+<!--                                                        </a>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </form>-->
+<!--                                    </div>-->
+<!--                                    <div id="forgot-password-content-displayNav2"-->
+<!--                                         class="header-login-content forgot-password-content">-->
+<!--                                        <form action="https://ld-prestashop.template-help.com/prestashop_22327/index.php"-->
+<!--                                              method="post" class="std">-->
+<!--                                            <section>-->
+<!--                                                <h2>Forgot your password?</h2>-->
+<!--                                                <div class="main-help-block">-->
+<!--                                                    <ul></ul>-->
+<!--                                                </div>-->
+<!--                                                <p>Please enter the email address you used to register. You will receive-->
+<!--                                                    a temporary link to reset your password.</p>-->
+<!--                                                <fieldset>-->
+<!--                                                    <div class="form-group">-->
+<!--                                                        <label class="form-control-label required">Email</label>-->
+<!--                                                        <div class="email">-->
+<!--                                                            <input class="form-control" type="email" name="email"-->
+<!--                                                                   value="" required="">-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="submit clearfix">-->
+<!--                                                        <button class="form-control-submit btn btn-primary mb-4"-->
+<!--                                                                name="submit" type="submit">-->
+<!--                                                            Send reset link-->
+<!--                                                        </button>-->
+<!--                                                    </div>-->
+<!--                                                </fieldset>-->
+<!--                                            </section>-->
+<!--                                            <div class="header-login-footer">-->
+<!--                                                <div class="button-login nav d-block">-->
+<!--                                                    <a href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#login-content-displayNav2"-->
+<!--                                                       data-toggle="tab" class="btn btn-dark">-->
+<!--                                                        Back to login-->
+<!--                                                    </a>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </form>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
             <div class="row it_XUSJKESNPIVR align-items-center">
                 <div class="it_BPPCCVBIMGEP col-12 col-sm-12 col-md-12 col-lg-3   logotype">
                     <a class="jxml-logo" href="<?= home_url(); ?>" title="Medic">
@@ -1001,7 +1001,7 @@
                                                    autocomplete="off">
                                             <div class="input-group-append">
                                                 <button type="submit" name="jx_submit_search" class="icon-search">
-                                                    <i class="material-icons-search"></i>
+                                                    <i class="fa fa-search" aria-hidden="true"></i>
                                                     <span class="d-none">Search</span>
                                                 </button>
                                             </div>
@@ -1020,52 +1020,52 @@
                         </div>
                     </div>
                 </div>
-                <div class="it_GAIWHLANBDKP col-12 col-sm-4 col-md-3 col-lg-3   d-flex justify-content-end mt-2 mt-lg-0">
-                    <div class="module desktop_for_cart">
-                        <div class="ps_shoppingcart js-dropdown dropdown">
-                            <a class="dropdown-toggle" rel="nofollow"
-                               href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"
-                               title="View Cart" role="button" data-toggle="dropdown" aria-haspopup="true"
-                               aria-expanded="false">
-                                <i class="material-icons-shopping_cart" aria-hidden="true"></i>
-                                <span class="cart-products-label">MY CART: </span>
-                                <span class="blockcart"
-                                      data-refresh-url="//ld-prestashop.template-help.com/prestashop_22327/index.php?fc=module&amp;module=ps_shoppingcart&amp;controller=ajax&amp;id_lang=1">
-      <span class="cart-products-count">0</span>
-      <span class="cart-products-count-text"> ITEMS</span>
-    </span>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <button type="button" class="dropdown-close close fa fa-times"></button>
-                                <div class="block-cart-body">
-                                    <h2 class="cart-summary-header">MY CART: </h2>
-                                    <div class="no-items alert alert-info">There are no more items in your cart</div>
-                                    <div class="cart-subtotals">
-                                        <div class="cart-products d-flex flex-wrap justify-content-between">
-                                            <span class="label">Subtotal</span>
-                                            <span class="value">$0.00</span>
-                                        </div>
-                                        <div class="cart-shipping d-flex flex-wrap justify-content-between">
-                                            <span class="label">Shipping</span>
-                                            <span class="value">Free</span>
-                                        </div>
-                                        <div class="cart-tax d-flex flex-wrap justify-content-between">
-                                            <span class="label">Taxes</span>
-                                            <span class="value">$0.00</span>
-                                        </div>
-                                    </div>
-                                    <div class="cart-total d-flex flex-wrap justify-content-between my-3">
-                                        <strong class="label">Total</strong>
-                                        <strong class="value">$0.00</strong>
-                                    </div>
-                                    <div class="cart-footer">
-                                        <span class="dropdown-close link link-primary">Continue shopping</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!--                <div class="it_GAIWHLANBDKP col-12 col-sm-4 col-md-3 col-lg-3   d-flex justify-content-end mt-2 mt-lg-0">-->
+<!--                    <div class="module desktop_for_cart">-->
+<!--                        <div class="ps_shoppingcart js-dropdown dropdown">-->
+<!--                            <a class="dropdown-toggle" rel="nofollow"-->
+<!--                               href="https://ld-prestashop.template-help.com/prestashop_22327/index.php#"-->
+<!--                               title="View Cart" role="button" data-toggle="dropdown" aria-haspopup="true"-->
+<!--                               aria-expanded="false">-->
+<!--                                <i class="material-icons-shopping_cart" aria-hidden="true"></i>-->
+<!--                                <span class="cart-products-label">MY CART: </span>-->
+<!--                                <span class="blockcart"-->
+<!--                                      data-refresh-url="//ld-prestashop.template-help.com/prestashop_22327/index.php?fc=module&amp;module=ps_shoppingcart&amp;controller=ajax&amp;id_lang=1">-->
+<!--      <span class="cart-products-count">0</span>-->
+<!--      <span class="cart-products-count-text"> ITEMS</span>-->
+<!--    </span>-->
+<!--                            </a>-->
+<!--                            <div class="dropdown-menu dropdown-menu-right">-->
+<!--                                <button type="button" class="dropdown-close close fa fa-times"></button>-->
+<!--                                <div class="block-cart-body">-->
+<!--                                    <h2 class="cart-summary-header">MY CART: </h2>-->
+<!--                                    <div class="no-items alert alert-info">There are no more items in your cart</div>-->
+<!--                                    <div class="cart-subtotals">-->
+<!--                                        <div class="cart-products d-flex flex-wrap justify-content-between">-->
+<!--                                            <span class="label">Subtotal</span>-->
+<!--                                            <span class="value">$0.00</span>-->
+<!--                                        </div>-->
+<!--                                        <div class="cart-shipping d-flex flex-wrap justify-content-between">-->
+<!--                                            <span class="label">Shipping</span>-->
+<!--                                            <span class="value">Free</span>-->
+<!--                                        </div>-->
+<!--                                        <div class="cart-tax d-flex flex-wrap justify-content-between">-->
+<!--                                            <span class="label">Taxes</span>-->
+<!--                                            <span class="value">$0.00</span>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="cart-total d-flex flex-wrap justify-content-between my-3">-->
+<!--                                        <strong class="label">Total</strong>-->
+<!--                                        <strong class="value">$0.00</strong>-->
+<!--                                    </div>-->
+<!--                                    <div class="cart-footer">-->
+<!--                                        <span class="dropdown-close link link-primary">Continue shopping</span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
         </div>
         <div class="wrapper it_RDZJXKBOCYJM container-fluid bg-primary">

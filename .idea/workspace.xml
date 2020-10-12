@@ -3,16 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0a51e16e-a197-4732-8555-a2a297d37022" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/Medic_files/jxmegalayout.css" beforeDir="false" afterPath="$PROJECT_DIR$/template/Medic_files/jxmegalayout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/template/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/template/contact.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/template/homepage.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/template/homepage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/2020-landscape-1-100x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/2020-landscape-1-1024x656.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/2020-landscape-1-150x150.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/2020-landscape-1-300x192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/2020-landscape-1-300x300.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/2020-landscape-1-600x385.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/2020-landscape-1-768x492.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/uploads/2020/10/2020-landscape-1.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mypham" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wordpress/wp-content/themes/thietbiyte/dist/font" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -48,6 +42,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\thietbiyte2\wordpress\wp-content\themes\thietbiyte\dist\font" />
       <recent name="C:\xampp\htdocs\thietbiyte2\wordpress\wp-content\themes\thietbiyte\dist\css" />
       <recent name="C:\xampp\htdocs\thietbiyte2\wordpress\wp-content\themes\thietbiyte\dist\js" />
       <recent name="C:\xampp\htdocs\thietbiyte2\wordpress\wp-content\themes\thietbiyte\template" />
@@ -82,6 +77,8 @@
       <workItem from="1602151499095" duration="1096000" />
       <workItem from="1602213115029" duration="9185000" />
       <workItem from="1602311978836" duration="10167000" />
+      <workItem from="1602472432749" duration="17000" />
+      <workItem from="1602486070707" duration="6456000" />
     </task>
     <servers />
   </component>
@@ -89,26 +86,31 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="684" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602316925202">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="547" y="257" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602495588480">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="547" y="257" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1602495588480" />
     <state x="684" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602316925202" />
-    <state x="448" y="169" key="FileChooserDialogImpl" timestamp="1602464360776">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="462" y="124" key="FileChooserDialogImpl" timestamp="1602491342282">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602055698283" />
+    <state x="462" y="124" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602491342282" />
     <state x="448" y="169" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602464360776" />
     <state x="604" y="336" key="NewPhpFileDialog" timestamp="1601715370237">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1601715370237" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1601954229023">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1602472438813">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1601954229023" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1601886383475">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1602472438813" />
+    <state x="463" y="144" width="703" height="536" key="find.popup" timestamp="1602495311051">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1601886383475" />
+    <state x="463" y="144" width="703" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1602495311051" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602495227213">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1602495227213" />
   </component>
 </project>
